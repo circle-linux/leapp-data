@@ -2,7 +2,7 @@
 
 **NOTE: As this project is newly announced we HIGHLY recommend that you follow system administration best practices and make sure you have backups and/or snapshots of your system before you proceed. It is recommended to do a trial run in a sandbox to verify that migration worked as expected before you attempt to migrate any production system.**
 
-This guide contains steps on how to upgrade CentOS 7 to RHEL8 derivatives such as AlmaLinux, CentOS, Oracle, Rocky.
+This guide contains steps on how to upgrade CentOS 7 to RHEL8 derivatives such as CircleLinux, AlmaLinux, CentOS, Oracle, Rocky.
 
 To use this guide you need to install Vagrant and VirtualBox using the following
 documentation:
@@ -12,7 +12,7 @@ documentation:
 
 * Clone this repo and cd into it
  ```
-    git clone https://github.com/AlmaLinux/leapp-data.git
+    git clone https://github.com/circle-linux/leapp-data.git
     cd leapp-data
  ```
 
@@ -35,9 +35,9 @@ documentation:
     sudo yum install leapp -y
  ```
 
-* Copy leapp config files for the OS you want to migrate. Possible options are almalinux, centos, eurolinux, oraclelinux, rocky.
+* Copy leapp config files for the OS you want to migrate. Possible options are circlelinux, almalinux, centos, eurolinux, oraclelinux, rocky.
  ```
-    sudo cp /vagrant/files/almalinux/* /etc/leapp/files/
+    sudo cp /vagrant/files/circle/* /etc/leapp/files/
  ```
 
 * Start a preupgrade check. It will fail as the default CentOS 7 doesn't meet all requirements for migration. In the meanwhile, Leapp utility creates a special */var/log/leapp/leapp-report.txt* file that contains possible problems and recommended solutions. No rpm packages will be installed at this phase.

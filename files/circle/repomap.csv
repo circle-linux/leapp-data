@@ -1,0 +1,19 @@
+CentOS 7 repoid,Circle 8 repoid in custom repo file,Circle 8 repo name in PES,CentOS 7 minor versions,Circle 8 minor versions,architecture,type(rpm/srpm/debuginfo),source product type (ga/beta,htb),target product type (ga/beta/htb)
+
+# Version: 1
+# Date: 20210726
+
+# x86_64
+base,circle8-baseos,circle8-baseos,all,all,x86_64,rpm,ga,ga
+base,circle8-appstream,circle8-appstream,all,all,x86_64,rpm,ga,ga
+base,circle8-powertools,circle8-powertools,all,all,x86_64,rpm,ga,ga
+base,circle8-ha,circle8-ha,all,all,x86_64,rpm,ga,ga
+base,circle8-resilient-storage,circle8-resilient-storage,all,all,x86_64,rpm,ga,ga
+
+updates,circle8-baseos,circle8-baseos,all,all,x86_64,rpm,ga,ga
+updates,circle8-appstream,circle8-appstream,all,all,x86_64,rpm,ga,ga
+updates,circle8-powertools,circle8-powertools,all,all,x86_64,rpm,ga,ga
+updates,circle8-ha,circle8-ha,all,all,x86_64,rpm,ga,ga
+updates,circle8-resilient-storage,circle8-resilient-storage,all,all,x86_64,rpm,ga,ga
+
+extras,circle8-extras,circle8-extras,all,all,x86_64,rpm,ga,ga

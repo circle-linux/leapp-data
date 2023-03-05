@@ -1,5 +1,5 @@
-%define dist_list almalinux centos eurolinux oraclelinux rocky
-%define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
+%define dist_list almalinux centos eurolinux oraclelinux rocky circle
+%define conflict_dists() %(for i in almalinux centos eurolinux oraclelinux rocky circle; do if [ "${i}" != "%{dist_name}" ]; then echo -n "leapp-data-${i} "; fi; done)
 
 Name:		leapp-data-%{dist_name}
 Version:	0.1
@@ -7,7 +7,7 @@ Release:	7%{?dist}
 Summary:	data for migrating tool
 Group:		Applications/Databases
 License:	ASL 2.0
-URL:		https://github.com/AlmaLinux/leapp-data
+URL:		https://github.com/circle-linux/leapp-data
 Source0:	leapp-data-%{version}.tar.gz
 BuildArch:  noarch
 
@@ -35,6 +35,7 @@ install -t %{buildroot}%{_sysconfdir}/leapp/files files/%{dist_name}/*
 
 
 %changelog
+
 * Tue Feb 28 2023 Andrew Lukoshko <alukoshko@almalinux.org> - 0.1-7
 - fix typo in oraclelinux PES data
 - remove kernel-uek from all PES data except oraclelinux

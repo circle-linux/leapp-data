@@ -1,0 +1,148 @@
+{
+    "datetime": "202204020934Z",
+    "version_format": "1.0.0",
+    "mapping": [
+        {
+            "source_major_version": "7",
+            "target_major_version": "8",
+            "entries": [
+                {
+                    "source": "base",
+                    "target": [
+                        "circle8-baseos",
+                        "circle8-appstream",
+                        "circle8-powertools",
+                        "circle8-ha",
+                        "circle8-resilient-storage"
+                    ]
+                },
+                {
+                    "source": "updates",
+                    "target": [
+                        "circle8-baseos",
+                        "circle8-appstream",
+                        "circle8-powertools",
+                        "circle8-ha",
+                        "circle8-resilient-storage"
+                    ]
+                },
+                {
+                    "source": "extras",
+                    "target": [
+                        "circle8-extras"
+                    ]
+                }
+            ]
+        }
+    ],
+    "repositories": [
+        {
+            "pesid": "base",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "repoid": "base",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "circle8-baseos",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "repoid": "circle8-baseos",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "circle8-appstream",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "circle8-appstream",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "circle8-powertools",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "circle8-powertools",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "circle8-ha",
+            "entries": [
+                {
+                    "repoid": "circle8-ha",
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "circle8-resilient-storage",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "repoid": "circle8-resilient-storage",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "updates",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "repoid": "updates",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "extras",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "repoid": "extras",
+                    "major_version": "7",
+                    "repo_type": "rpm",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "pesid": "circle8-extras",
+            "entries": [
+                {
+                    "channel": "ga",
+                    "major_version": "8",
+                    "repo_type": "rpm",
+                    "arch": "x86_64",
+                    "repoid": "circle8-extras"
+                }
+            ]
+        }
+    ]
+}

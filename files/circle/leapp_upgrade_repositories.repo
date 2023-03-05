@@ -1,0 +1,47 @@
+[circle8-baseos]
+name=Circle Linux 8 - BaseOS
+mirrorlist=https://mirrorlist.cclinux.org/mirrorlist?arch=$basearch&repo=BaseOS
+#baseurl=https://mirror.cclinux.org/$contentdir/$releasever/BaseOS/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-circleofficial
+
+[circle8-appstream]
+name=Circle Linux 8 - AppStream
+mirrorlist=https://mirrorlist.cclinux.org/mirrorlist?arch=$basearch&repo=AppStream
+#baseurl=https://mirror.cclinux.org/$contentdir/$releasever/AppStream/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-circleofficial
+
+[circle8-powertools]
+name=Circle Linux 8 - PowerTools
+mirrorlist=https://mirrorlist.cclinux.org/mirrorlist?arch=$basearch&repo=PowerTools
+#baseurl=https://mirror.cclinux.org/$contentdir/$releasever/PowerTools/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-circleofficial
+
+[circle8-ha]
+name=Circle Linux 8 - HighAvailability
+mirrorlist=https://mirrorlist.cclinux.org/mirrorlist?&arch=$basearch&repo=HighAvailability
+#baseurl=https://mirror.cclinux.org/$contentdir/$releasever/HighAvailability/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-circleofficial
+
+[circle8-resilient-storage]
+name=Circle Linux 8 - ResilientStorage
+mirrorlist=https://mirrorlist.cclinux.org/mirrorlist?arch=$basearch&repo=ResilientStorage
+#baseurl=https://mirror.cclinux.org/$contentdir/$releasever/ResilientStorage/$basearch/os/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-circleofficial
+
+[circle8-extras]
+name=Circle Linux 8 - Extras
+mirrorlist=https://mirrorlist.cclinux.org/mirrorlist?arch=$basearch&repo=extras
+#baseurl=https://mirror.cclinux.org/$contentdir/$releasever/extras/$basearch/os/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-circleofficial
